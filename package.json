@@ -1,0 +1,33 @@
+{
+  "name": "services",
+  "version": "1.0.0",
+  "repository": "git@github.com:econovizer/services.git",
+  "author": "Michael Glitzos <michael.glitzos@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --env=node"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write --parser=babylon",
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.1",
+    "eslint-plugin-react": "7.11.0",
+    "husky": "^1.3.1",
+    "jest": "^24.7.1",
+    "lint-staged": "^8.1.5",
+    "prettier": "^1.17.0"
+  }
+}

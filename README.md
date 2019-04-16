@@ -1,2 +1,3 @@
-# services
-Backend services for the econovizer project
+# Econovizer Services
+This project serves as the API for the Econovizer
+project.
