@@ -4,7 +4,7 @@ describe('Transaction functionality', () => {
   it('Has a description', () => {
     const testDescription = 'test description';
     const transaction = new Transaction(testDescription);
-    expect(transaction.name).toEqual(testDescription);
+    expect(transaction.description).toEqual(testDescription);
   });
 
   it('Has an amount', () => {
